@@ -8,4 +8,8 @@ fn main() {
                      0.1f32, 0.2f64,
                      'a', true);
 
+
+   println!("long tuple first value: {}", long_tuple.0);
+   println!("long tuple second value: {}", long_tuple.1);
+
 }
