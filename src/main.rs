@@ -13,5 +13,9 @@ fn main() {
    println!("long tuple second value: {}", long_tuple.1);
    println!("long tuple second value: {}", long_tuple.2);
 
+   // Tuples can be tuple members
+    let tuple_of_tuples = ((1u8, 2u16, 2u32), (4u64, -1i8), -2i16);
+
+
 
 }
