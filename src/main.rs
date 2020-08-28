@@ -17,6 +17,10 @@ fn main() {
     let tuple_of_tuples = ((1u8, 2u16, 2u32), (4u64, -1i8), -2i16);
 
     println!("tuple of tuples: {:?}", tuple_of_tuples);
+    
+    let pair = (1, true);
+    println!("pair is {:?}", pair);
+
 
 
 
