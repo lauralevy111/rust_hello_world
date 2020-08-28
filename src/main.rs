@@ -11,5 +11,7 @@ fn main() {
 
    println!("long tuple first value: {}", long_tuple.0);
    println!("long tuple second value: {}", long_tuple.1);
+   println!("long tuple second value: {}", long_tuple.2);
+
 
 }
