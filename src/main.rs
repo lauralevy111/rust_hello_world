@@ -10,10 +10,10 @@ fn main() {
 
 
    println!("long tuple first value: {}", long_tuple.0);
-   for(x=0; x<long_tuple.len(); x++)
-   {
-      println!(long_tuple.x);
-  }
+   /*
+   for (int x = 0; x<long_tuple.len(); x++) {
+       println!(long_tuple.x);
+   }*/
 
 
    // Tuples can be tuple members
