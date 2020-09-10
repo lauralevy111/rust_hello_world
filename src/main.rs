@@ -7,10 +7,15 @@ fn main() {
                      -1i8, -2i16, -3i32, -4i64,
                      0.1f32, 0.2f64,
                      'a', true);
-    let l_tuple = (1u8, 2u16, 3u32, 4u64,
+    let l_tuple2 = (1u8, 2u16, 3u32, 4u64,
                                        -1i8, -2i16, -3i32, -4i64,
                                        0.1f32, 0.2f64,
                                        'a', true);
+    let l_tuple3 = (1u8, 2u16, 3u32, 4u64,
+                    -1i8, -2i16, -3i32, -4i64,
+                    0.1f32, 0.2f64,
+                    'a', true);
+
 
 
    println!("long tuple first value: {}", long_tuple.0);
