@@ -61,6 +61,10 @@ fn main() {
     let xs: [i32; 5] = [1, 2, 3, 4, 5];
     let ys: [i32; 500] = [0; 500];
 
+    //printing xs metadata
+    println!("first element of the array: {}", xs[0]);
+    println!("second element of the array: {}", xs[1]);
+
 
 
 }
