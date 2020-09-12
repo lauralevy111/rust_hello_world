@@ -56,7 +56,9 @@ fn main() {
             // Exit this loop
             break;
         }
-*/ //commenting out practice code 
+*/ //commenting out practice code
+
+    let xs: [i32; 5] = [1, 2, 3, 4, 5];
 
 
 
