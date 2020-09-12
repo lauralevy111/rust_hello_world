@@ -65,6 +65,9 @@ fn main() {
     println!("first element of the array: {}", xs[0]);
     println!("second element of the array: {}", xs[1]);
 
+    //using .len method
+    println!("array size: {}", xs.len());
+
 
 
 }
