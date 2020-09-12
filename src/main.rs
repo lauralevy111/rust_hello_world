@@ -1,3 +1,11 @@
+
+
+// This function borrows a slice
+fn analyze_slice(slice: &[i32]) {
+    println!("first element of the slice: {}", slice[0]);
+    println!("the slice has {} elements", slice.len());
+}
+
 fn main() {
 
     let logical bool = true;
@@ -21,7 +29,7 @@ fn main() {
    println!("long tuple first value: {}", long_tuple.0);
 
 
-   // Tuples can be tuple members
+   // Tuples can be tuple member
     let tuple_of_tuples = ((1u8, 2u16, 2u32), (4u64, -1i8), -2i16);
 
     println!("tuple of tuples: {:?}", tuple_of_tuples);
