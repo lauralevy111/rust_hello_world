@@ -59,6 +59,7 @@ fn main() {
 */ //commenting out practice code
 
     let xs: [i32; 5] = [1, 2, 3, 4, 5];
+    let ys: [i32; 500] = [0; 500];
 
 
 
