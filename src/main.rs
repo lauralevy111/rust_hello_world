@@ -60,12 +60,29 @@ fn main() {
 */ //commenting out practice code
 
     let xs: [i32; 5] = [1, 2, 3, 4, 5];
+    //if  you dont use a variable, rust wants you to prefix it w/ "_"...
+    //what is rust
     let ys: [i32; 500] = [0; 500];
+    let zs: [i32; 3]= [1, 2, 3];
+
+//if i dont use this string in the println, it doesnt print right bc its a formatting identifier?
+//what is rust?
 
     //printing xs metadata
-    println!("first element of the array: {}", xs[0]);
-    println!("second element of the array: {}", xs[1]);
+    println!("first element of the x array: {}", xs[0]);
+    println!("second element of the x array: {}", xs[1]);
+    //printing yx metadata
+    println!("first element of the y array: {}", ys[0]);
+    println!("first element of the y array: {}", ys[1]);
+    //printing zx metadata
+    println!("first element of the z array: {}", zs[0]);
+    println!("first element of the z array: {}", zs[1]);
 
+/*
+
+    println!("first element of the y array = ",ys[0]);
+    println!("second element of the y array = ",ys[1]);
+*/
     //using .len method
     println!("array size: {}", xs.len());
 
