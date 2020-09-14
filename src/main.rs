@@ -82,7 +82,10 @@ fn main() {
     println!("array size: {}", xs.len());
 
     // Arrays are stack allocated
-    println!("array occupies {} bytes", mem::size_of_val(&xs));
+    println!("x array occupies {} bytes", mem::size_of_val(&xs));
+
+    println!("y array occupies {} bytes", mem::size_of_val(&ys));
+
     println!("borrow the whole array as a slice");
     analyze_slice(&xs);
 
