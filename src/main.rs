@@ -78,11 +78,6 @@ fn main() {
     println!("first element of the z array: {}", zs[0]);
     println!("first element of the z array: {}", zs[1]);
 
-/*
-
-    println!("first element of the y array = ",ys[0]);
-    println!("second element of the y array = ",ys[1]);
-*/
     //using .len method
     println!("array size: {}", xs.len());
 
