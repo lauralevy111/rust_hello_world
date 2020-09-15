@@ -28,6 +28,14 @@ struct Point {
     x: f32,
     y: f32,
 }
+#[allow(dead_code)]
+struct Rectangle {
+    // A rectangle can be specified by where the top left and bottom right
+    // corners are in space.
+    top_left: Point,
+    bottom_right: Point,
+}
+
 
 
 fn main() {
@@ -140,6 +148,13 @@ fn main() {
 
     // Destructure the point using a `let` binding
     let Point { x: top_edge, y: left_edge } = point;
+
+    let _rectangle = Rectangle {
+        // struct instantiation is an expression too
+        top_left: Point { x: left_edge, y: top_edge },
+        bottom_right: bottom_right,
+    };
+
 
 
 
