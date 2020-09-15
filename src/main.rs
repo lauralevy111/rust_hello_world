@@ -7,6 +7,13 @@ fn analyze_slice(slice: &[i32]) {
     println!("the slice has {} elements", slice.len());
 }
 
+
+struct Person<'a> {
+    // The 'a defines a lifetime
+    name: &'a str,
+    age: u8,
+}
+
 fn main() {
 /*
     let logical bool = true;
@@ -59,6 +66,8 @@ fn main() {
         }
 */ //commenting out practice code
 
+/*
+
     let xs: [i32; 5] = [1, 2, 3, 4, 5];
     //if  you dont use a variable, rust wants you to prefix it w/ "_"...
     //what is rust
@@ -88,6 +97,9 @@ fn main() {
 
     println!("borrow the whole array as a slice");
     analyze_slice(&xs);
+    */
+
+
 
 
 
