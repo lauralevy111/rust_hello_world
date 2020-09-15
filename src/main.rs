@@ -21,13 +21,14 @@ struct Unit;
 
 // A tuple struct
 struct Pair(i32, f32);
+*/
 
 // A struct with two fields
 struct Point {
     x: f32,
     y: f32,
 }
-*/
+
 
 fn main() {
 /*
@@ -122,6 +123,12 @@ fn main() {
     // Print debug struct
     println!("{:?}", peter);
 
+
+    // Instantiate a `Point`
+    let point: Point = Point { x: 10.3, y: 0.4 };
+
+    // Access the fields of the point
+    println!("point coordinates: ({}, {})", point.x, point.y);
 
 
 
