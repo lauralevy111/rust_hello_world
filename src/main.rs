@@ -138,6 +138,9 @@ fn main() {
     // from `point`
     println!("second point: ({}, {})", bottom_right.x, bottom_right.y);
 
+    // Destructure the point using a `let` binding
+    let Point { x: top_edge, y: left_edge } = point;
+
 
 
 
