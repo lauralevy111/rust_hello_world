@@ -99,6 +99,14 @@ fn main() {
     analyze_slice(&xs);
     */
 
+        // Create struct with field init shorthand
+        let name = "Peter";
+        let age = 27;
+        let peter = Person { name, age };
+
+        // Print debug struct
+        println!("{:?}", peter);
+
 
 
 
