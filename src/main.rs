@@ -158,4 +158,7 @@ fn main() {
     // Instantiate a unit struct
     let _unit = Unit;
 
+    // Instantiate a tuple struct
+    let pair = Pair(1, 0.1);
+
 }
