@@ -14,14 +14,14 @@ struct Person<'a> {
     name: &'a str,
     age: u8,
 }
-/*
+
 
 // A unit struct
 struct Unit;
 
 // A tuple struct
 struct Pair(i32, f32);
-*/
+
 
 // A struct with two fields
 struct Point {
