@@ -161,4 +161,8 @@ fn main() {
     // Instantiate a tuple struct
     let pair = Pair(1, 0.1);
 
+
+    // Access the fields of a tuple struct
+    println!("pair contains {:?} and {:?}", pair.0, pair.1);
+
 }
