@@ -165,4 +165,7 @@ fn main() {
     // Access the fields of a tuple struct
     println!("pair contains {:?} and {:?}", pair.0, pair.1);
 
+    // Destructure a tuple struct
+    let Pair(integer, decimal) = pair;
+
 }
