@@ -9,6 +9,7 @@
 //}
 
 
+
 struct Person<'a> {
     // The 'a defines a lifetime
     name: &'a str,
@@ -149,7 +150,7 @@ fn main() {
     // Destructure the point using a `let` binding
     let Point { x: top_edge, y: left_edge } = point;
 
-    let _rectangle = Rectangle {
+    let rectangle = Rectangle {
         // struct instantiation is an expression too
         top_left: Point { x: left_edge, y: top_edge },
         bottom_right: bottom_right,
@@ -161,11 +162,22 @@ fn main() {
     // Instantiate a tuple struct
     let pair = Pair(1, 0.1);
 
-
     // Access the fields of a tuple struct
     println!("pair contains {:?} and {:?}", pair.0, pair.1);
 
     // Destructure a tuple struct
-    let Pair(integer, decimal) = pair;
+    let Pair(_integer, _decimal) = pair;
+
+    let area = calculate_area(rectangle);
+    println!("area is {:?}",area);
+
+}
+
+fn calculate_area(rectangle: Rectangle)-> f32{
+        let y = rectangle.top_left.y - rectangle.bottom_right.y;
+        let x = rectangle.bottom_right.x - rectangle.top_left.x;
+
+        let area = x*y;
+        return area;
 
 }
