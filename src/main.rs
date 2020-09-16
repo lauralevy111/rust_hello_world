@@ -155,9 +155,7 @@ fn main() {
         bottom_right: bottom_right,
     };
 
-
-
-
-
+    // Instantiate a unit struct
+    let _unit = Unit;
 
 }
