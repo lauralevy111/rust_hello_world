@@ -39,6 +39,15 @@ struct Rectangle {
     top_left: Point,
     bottom_right: Point,
 }
+
+fn calculate_area(rectangle: Rectangle)-> f32{
+        let y = rectangle.top_left.y - rectangle.bottom_right.y;
+        let x = rectangle.bottom_right.x - rectangle.top_left.x;
+
+        let area = x*y;
+        return area;
+
+}
 */
 
 // A function which takes a `WebEvent` enum as an argument and
@@ -207,13 +216,3 @@ fn main() {
     */
 
 }
-/*
-
-fn calculate_area(rectangle: Rectangle)-> f32{
-        let y = rectangle.top_left.y - rectangle.bottom_right.y;
-        let x = rectangle.bottom_right.x - rectangle.top_left.x;
-
-        let area = x*y;
-        return area;
-
-}*/
