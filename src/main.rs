@@ -207,6 +207,7 @@ fn main() {
     */
 
 }
+/*
 
 fn calculate_area(rectangle: Rectangle)-> f32{
         let y = rectangle.top_left.y - rectangle.bottom_right.y;
@@ -215,4 +216,4 @@ fn calculate_area(rectangle: Rectangle)-> f32{
         let area = x*y;
         return area;
 
-}
+}*/
