@@ -9,13 +9,12 @@
 //}
 
 
-
+/*
 struct Person<'a> {
     // The 'a defines a lifetime
     name: &'a str,
     age: u8,
 }
-
 
 // A unit struct
 struct Unit;
@@ -36,7 +35,7 @@ struct Rectangle {
     top_left: Point,
     bottom_right: Point,
 }
-
+*/
 
 
 fn main() {
@@ -123,6 +122,8 @@ fn main() {
     println!("borrow the whole array as a slice");
     analyze_slice(&xs);
     */
+    //struct practice:
+    /*
 
     // Create struct with field init shorthand
     let name = "Peter";
@@ -170,6 +171,7 @@ fn main() {
 
     let area = calculate_area(rectangle);
     println!("area is {:?}",area);
+    */
 
 }
 
