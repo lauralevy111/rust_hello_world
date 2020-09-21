@@ -8,10 +8,6 @@
 //    println!("the slice has {} elements", slice.len());
 //}
 
-enum WebEvent {
-    PageLoad,
-    PageUnload,
-}
 
 /*
 struct Person<'a> {
