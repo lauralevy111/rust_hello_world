@@ -21,7 +21,13 @@ fn main() {
     // Equivalent to `Status::Poor`.
    let status = Poor;
    // Equivalent to `Work::Civilian`.
-   let work = Civilian;
+   let work = Civilian;]
+
+   match status {
+        // Note the lack of scoping because of the explicit `use` above.
+        Rich => println!("The rich have lots of money!"),
+        Poor => println!("The poor have no money..."),
+    }
 
 
 }
