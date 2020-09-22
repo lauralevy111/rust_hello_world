@@ -9,6 +9,10 @@ enum List{
 
 }
 
+impl List {
+    
+}
+
 fn main() {
 
 }
