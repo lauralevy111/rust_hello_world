@@ -64,4 +64,5 @@ fn main() {
 
     // Show the final state of the list
     println!("linked list has length: {}", list.len());
+    println!("{}", list.stringify());
 }
