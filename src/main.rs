@@ -20,6 +20,7 @@ impl List {
         // `Cons` also has type List
         Cons(elem, Box::new(self))
     }
+    
     // Return the length of the list
     fn len(&self) -> u32 {
         // `self` has to be matched, because the behavior of this method
@@ -32,6 +33,20 @@ impl List {
             Cons(_, ref tail) => 1 + tail.len(),
             // Base Case: An empty list has zero length
             Nil => 0
+        }
+    }
+
+    // Return representation of the list as a (heap allocated) string
+    fn stringify(&self) -> String {
+        match *self {
+            Cons(head, ref tail) => {
+                // `format!` is similar to `print!`, but returns a heap
+                // allocated string instead of printing to the console
+                format!("{}, {}", head, tail.stringify())
+            },
+            Nil => {
+                format!("Nil")
+            },
         }
     }
 
