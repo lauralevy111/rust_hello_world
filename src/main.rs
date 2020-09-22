@@ -10,7 +10,12 @@ enum List{
 }
 
 impl List {
-    
+    // Create an empty list
+    fn new() -> List {
+        // `Nil` has type `List`
+        Nil
+    }
+
 }
 
 fn main() {
