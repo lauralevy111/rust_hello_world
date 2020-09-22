@@ -62,5 +62,6 @@ fn main() {
     list = list.prepend(2);
     list = list.prepend(3);
 
-
+    // Show the final state of the list
+    println!("linked list has length: {}", list.len());
 }
