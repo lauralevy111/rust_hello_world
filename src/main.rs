@@ -20,7 +20,7 @@ impl List {
         // `Cons` also has type List
         Cons(elem, Box::new(self))
     }
-    
+
     // Return the length of the list
     fn len(&self) -> u32 {
         // `self` has to be matched, because the behavior of this method
@@ -53,5 +53,8 @@ impl List {
 }
 
 fn main() {
+
+        // Create an empty linked list
+        let mut list = List::new();
 
 }
