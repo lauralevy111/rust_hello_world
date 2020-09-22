@@ -15,6 +15,11 @@ impl List {
         // `Nil` has type `List`
         Nil
     }
+    // Consume a list, and return the same list with a new element at its front
+    fn prepend(self, elem: u32) -> List {
+        // `Cons` also has type List
+        Cons(elem, Box::new(self))
+    }
 
 }
 
