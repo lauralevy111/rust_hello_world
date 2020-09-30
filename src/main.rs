@@ -59,9 +59,6 @@ fn main() {
 
     // Prepend some elements
     list = list.prepend(1);
-    list = list.prepend(2);
-    list = list.prepend(3);
-    list = list.prepend(4);
 
     // Show the final state of the list
     println!("linked list has length: {}", list.len());
