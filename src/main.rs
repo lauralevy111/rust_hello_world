@@ -1,5 +1,8 @@
 use crate::List::*;
 
+static LANGUAGE: &str = "Rust";
+const THRESHOLD: i32 = 4;
+
 enum List{
 
         // Cons: Tuple struct that wraps an element and a pointer to the next node
@@ -11,10 +14,9 @@ enum List{
 
 impl List {
     // Create an empty list
-    fn new() -> List {
-        // `Nil` has type `List`
-        Nil
-    }
+    fn new() -> List {// `Nil` has type `List`
+        Nil}
+
     // Consume a list, and return the same list with a new element at its front
     fn prepend(self, elem: u32) -> List {
         // `Cons` also has type List
@@ -23,10 +25,12 @@ impl List {
 
     // Return the length of the list
     fn len(&self) -> u32 {
+
         // `self` has to be matched, because the behavior of this method
         // depends on the variant of `self`
         // `self` has type `&List`, and `*self` has type `List`, matching on a
         // concrete type `T` is preferred over a match on a reference `&T`
+
         match *self {
             // Can't take ownership of the tail, because `self` is borrowed;
             // instead take a reference to the tail
@@ -46,7 +50,7 @@ impl List {
             },
             Nil => {
                 format!("Nil")
-            },
+            }
         }
     }
 
@@ -59,8 +63,12 @@ fn main() {
 
     // Prepend some elements
     list = list.prepend(1);
+    list = list.prepend(3);
+
 
     // Show the final state of the list
     println!("linked list has length: {}", list.len());
     println!("{}", list.stringify());
+    println!("The threshold is {}", THRESHOLD);
+    println!("This is {}", LANGUAGE);
 }
