@@ -65,10 +65,12 @@ fn main() {
     list = list.prepend(1);
     list = list.prepend(3);
 
+    let my_bool = true; //its a variable binding, queen!
+
 
     // Show the final state of the list
     println!("linked list has length: {}", list.len());
     println!("{}", list.stringify());
-    println!("The threshold is {}", THRESHOLD);
+    println!("The threshold is {}"  , THRESHOLD);
     println!("This is {}", LANGUAGE);
 }
